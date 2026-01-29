@@ -1,0 +1,21 @@
+[project]
+name = "dm"
+version = "0.3.0"
+description = "Narzędzie do automatyzacji procesu wdrażania opartego o PR Bitbucket."
+authors = [
+    { name = "Rafał Sulka", email = "rafal.sulka@pekao.com.pl" },
+]
+dependencies = [
+    "fabric",
+    "saspy",
+    "loguru",
+    "requests"
+]
+
+[project.optional-dependencies]
+dev = [
+    "types-requests",
+]
+
+[project.scripts]
+dm = "deployment_manager.cli:main"

@@ -1,0 +1,15 @@
+{
+    "bitbucket_project_or_workspace": "cri",
+    "bitbucket_host": "bitbucket",
+    "is_bitbucket_server": true,
+    "dm_runtime_base_dir": "/migracje/dm_runtime",
+    "remote_git_path": "/opt/freeware/bin/git",
+    "display": "vdesk10345:0.0",
+    "path_to_exportpackage": "/sas/sas94/SASPlatformObjectFramework/9.4/ExportPackage",
+    "path_to_importpackage": "/sas/sas94/SASPlatformObjectFramework/9.4/ImportPackage",
+    "path_to_deployjobs": "/sas/sas94/SASDataIntegrationStudioServerJARs/4.8/DeployJobs",
+    "batch_server": "ENGINEAdmin - SAS DATA Step Batch Server",
+    "meta_repo": "Foundation",
+    "appserver": "ENGINEAdmin",
+    "dev_meta_profile": "deploy_ndev1"
+}

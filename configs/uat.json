@@ -1,0 +1,9 @@
+{
+    "meta_profile": "deploy_uat",
+    "deployed_jobs_dir": "/sas/conf/Lev1/ENGINEAdmin/SASEnvironment/SASCode/Jobs",
+    "server_machine": "misuat",
+    "server_port": 8591,
+    "ssh_host": "misuat",
+    "approvals": 1,
+    "deploy_user": "misadmin"
+}

@@ -1,0 +1,9 @@
+{
+    "meta_profile": "deploy_ndev1",
+    "deployed_jobs_dir": "/sas/conf/Lev2/ENGINEAdmin/SASEnvironment/SASCode/Jobs",
+    "server_machine": "misdev1",
+    "server_port": 8595,
+    "ssh_host": "misdev1",
+    "approvals": 0,
+    "deploy_user": "misadmin"
+}
