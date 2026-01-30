@@ -106,8 +106,18 @@ class Config:
             )
 
         allowed_empty = {"display"}
+        allowed_zero = {"approvals"}
         keys_to_check = required_keys - allowed_empty
-        problematic_keys = {key for key in keys_to_check if not self._config.get(key)}
+
+        problematic_keys: set[str] = set()
+        for key in keys_to_check:
+            value = self._config.get(key)
+            if value is None:
+                problematic_keys.add(key)
+            elif key not in allowed_zero and value == "":
+                problematic_keys.add(key)
+            elif key not in allowed_zero and value == 0:
+                problematic_keys.add(key)
 
         if problematic_keys:
             raise ValueError(

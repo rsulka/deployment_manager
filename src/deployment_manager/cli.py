@@ -257,13 +257,16 @@ def main() -> None:
 
     try:
         if mock_mode:
-            # Tryb mock - nie wymaga konfiguracji
             from .mock import MockSSHExecutor
 
             setup_logging()
             info("="*60)
             info("[MOCK] TRYB TESTOWY - operacje są symulowane")
             info("="*60)
+
+            # Wczytaj i zwaliduj konfigurację jak w prawdziwym trybie
+            config_path = Path(__file__).resolve().parents[2] / CONFIG_DIR_NAME
+            config = Config(config_path, args.env)
 
             mock_base = Path(tempfile.gettempdir()) / "dm_mock"
             ssh_executor: SSHExecutorType = MockSSHExecutor(mock_base)
@@ -273,14 +276,6 @@ def main() -> None:
                 f"/mock_runtime/{DEPLOY_DIR_PREFIX}{timestamp}_{uuid.uuid4()}"
             )
             ssh_executor.mkdir(remote_work_dir)
-
-            # Mockowa konfiguracja
-            from unittest.mock import MagicMock
-            config = MagicMock()
-            config.get = lambda key, default=None: {
-                "approvals": 0,
-                "remote_git_path": "git",
-            }.get(key, default or "mock_value")
         else:
             config_path = Path(__file__).resolve().parents[2] / CONFIG_DIR_NAME
             config = Config(config_path, args.env)

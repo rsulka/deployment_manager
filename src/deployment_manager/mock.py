@@ -94,7 +94,7 @@ class MockSSHExecutor:
         info(f"{prompt}{command}")
 
         # Specjalne obsłużenie niektórych komend
-        if command.startswith("git "):
+        if "git " in command or command.startswith("git"):
             return self._handle_git_command(command, cwd)
         if command.startswith("mkdir "):
             path_str = command.replace("mkdir -p ", "").strip().strip("'\"")
