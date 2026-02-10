@@ -15,16 +15,14 @@ SAS_config_names = ['ssh_dev',
 # DEV (UNIX)
 ssh_dev     = {'saspath' : '/sas/sas94/SASFoundation/9.4/bin/sas_en',
             'ssh'        : '/usr/bin/ssh',
-            'host'       : 'misdev1',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misdev1',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
 
 ssh_batch_dev     = {'saspath' : '/sas/conf/DEV/ENGINEAdmin/BatchServer/sasbatch.sh',
             'ssh'        : '/usr/bin/ssh',
-            'host'       : 'misdev1',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misdev1',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
@@ -32,16 +30,14 @@ ssh_batch_dev     = {'saspath' : '/sas/conf/DEV/ENGINEAdmin/BatchServer/sasbatch
 # UAT (UNIX)
 ssh_uat     = {'saspath' : '/sas/sas94/SASFoundation/9.4/bin/sas_en',
             'ssh'        : '/usr/bin/ssh',
-            'host'       : 'misuat',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misuat',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
 
 ssh_batch_uat     = {'saspath' : '/sas/conf/UAT/ENGINEAdmin/BatchServer/sasbatch.sh',
             'ssh'        : '/usr/bin/ssh',
-            'host'       : 'misuat',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misuat',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
@@ -49,16 +45,14 @@ ssh_batch_uat     = {'saspath' : '/sas/conf/UAT/ENGINEAdmin/BatchServer/sasbatch
 # PROD (UNIX)
 ssh_prod     = {'saspath' : '/sas/sas94/SASFoundation/9.4/bin/sas_en',
             'ssh'        : '/usr/bin/ssh',
-            'host'       : 'misprod',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misprod',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
 
 ssh_batch_prod     = {'saspath' : '/sas/conf/PROD/ENGINEAdmin/BatchServer/sasbatch.sh',
             'ssh'        : '/usr/bin/ssh',
-            'host'       : 'misprod',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misprod',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
@@ -66,16 +60,14 @@ ssh_batch_prod     = {'saspath' : '/sas/conf/PROD/ENGINEAdmin/BatchServer/sasbat
 # DEV (Windows)
 ssh_win_dev     = {'saspath' : '/sas/sas94/SASFoundation/9.4/bin/sas_en',
             'ssh'        : 'ssh',
-            'host'       : 'misdev1',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misdev1',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
 
 ssh_win_batch_dev     = {'saspath' : '/sas/conf/DEV/ENGINEAdmin/BatchServer/sasbatch.sh',
             'ssh'        : 'ssh',
-            'host'       : 'misdev1',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misdev1',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
@@ -83,16 +75,14 @@ ssh_win_batch_dev     = {'saspath' : '/sas/conf/DEV/ENGINEAdmin/BatchServer/sasb
 # UAT (Windows)
 ssh_win_uat     = {'saspath' : '/sas/sas94/SASFoundation/9.4/bin/sas_en',
             'ssh'        : 'ssh',
-            'host'       : 'misuat',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misuat',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
 
 ssh_win_batch_uat     = {'saspath' : '/sas/conf/UAT/ENGINEAdmin/BatchServer/sasbatch.sh',
             'ssh'        : 'ssh',
-            'host'       : 'misuat',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misuat',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
@@ -100,16 +90,14 @@ ssh_win_batch_uat     = {'saspath' : '/sas/conf/UAT/ENGINEAdmin/BatchServer/sasb
 # PROD (Windows)
 ssh_win_prod     = {'saspath' : '/sas/sas94/SASFoundation/9.4/bin/sas_en',
             'ssh'        : 'ssh',
-            'host'       : 'misprod',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misprod',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }
 
 ssh_win_batch_prod     = {'saspath' : '/sas/conf/PROD/ENGINEAdmin/BatchServer/sasbatch.sh',
             'ssh'        : 'ssh',
-            'host'       : 'misprod',
-            'user'       : 'misadmin',
+            'host'       : 'misadmin@misprod',
             'encoding'   : 'latin2',
             'options'    : ["-fullstimer"]
             }

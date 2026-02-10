@@ -41,6 +41,7 @@ Używaj `make` do standardowych operacji:
 
 - **Nie używaj requirements.txt** – wszystko przez `pyproject.toml`
 - **Nie pisz komentarzy po angielsku** – komentarze i docstringi po polsku
+- **Docstringi powinny mieć krótką, przejrzystą formę, bez technicznego żargonu**
 - **Nie twórz komentarzy w kodzie** – kod powinien być czytelny sam w sobie
 - **Aktualizuj README.md** po dodaniu nowych funkcji
 - **Utrzymuj aktualność dokumentacji w `docs/`**
